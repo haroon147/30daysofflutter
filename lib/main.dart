@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:week4statefulwidget/Utils/routes.dart';
-
-import 'MyHomePage.dart';
+import 'Pages/MyHomePage.dart';
+import 'utils/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        myRoutes.homeRoute :(context)=> MyHomePage(),
+        myRoutes.homeRoute :(context)=> const MyHomePage(),
       }
     );
   }
